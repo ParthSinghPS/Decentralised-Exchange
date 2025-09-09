@@ -6,17 +6,11 @@ import "./Pair.sol";
 
 contract Factory is IFactory {
 
-    address public feeTo;
-    address public feeToSetter;
-
     mapping(address => mapping(adderss => address)) public getPair;
     address[] public allPairs;
 
     event PairCreated(address indexed token0 , address indexed token1 , address pair , uint );
 
-    constructor(address _feeToSetter) {
-        feeToSetter = _feeToSetter;
-    }
 
     function allPairsLength() external view returns (uint) {
         return allPairs.Length;
@@ -40,13 +34,4 @@ contract Factory is IFactory {
 
     }
 
-    function setFeeTo(address _feeTo) external {
-        require(msg.sender == _feeTo , "Access Denied");
-        feeTo = _feeTo;
-    }
-
-    function setFeeToSetter(address _feeToSetter) external {
-        require(msg.sender == _feeToSetter , "Access Denied");
-        feeToSetter = _feeToSetter;
-    }
 }
