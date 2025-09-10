@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE;
 pragma solidity>=0.5.0;
 
 import "./interfaces/IDexERC20.sol";
