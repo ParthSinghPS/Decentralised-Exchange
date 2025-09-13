@@ -1,0 +1,3 @@
+[submodule "Decentralized-Exchange/lib/forge-std"]
+	path = Decentralized-Exchange/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
